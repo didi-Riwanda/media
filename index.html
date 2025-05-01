@@ -1,21 +1,37 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>media bikin wisudah</title>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <script src="ruffle/ruffle.js"></script>
+  <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
 </head>
-<body bgcolor="#ffffff">
-<!--url's used in the movie-->
-<!--text used in the movie-->
-<!--
-<p align="center"><font face="Cambria" size="40" color="#ffffff" letterSpacing="0.000000" kerning="1"><b>lanjut</b></font></p>
-<p align="center"><font face="Cambria" size="40" color="#ffffff" letterSpacing="0.000000" kerning="1"><b>kembali</b></font></p>
-<p align="center"><font face="Cambria" size="40" color="#ffffff" letterSpacing="0.000000" kerning="1"><b>home</b></font></p>
-<p align="center"></p>
--->
-<!-- saved from url=(0013)about:internet -->
-<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="800" height="600" id="media bikin wisudah" align="middle">
-<param name="allowScriptAccess" value="sameDomain" />
-<param name="movie" value="media bikin wisudah.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="media bikin wisudah.swf" quality="high" bgcolor="#ffffff" width="800" height="600" name="media bikin wisudah" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer" />
-</object>
+<body>
+  <div id="flash-container">
+    <object data="index.swf" type="application/x-shockwave-flash" width="800" height="600">
+      <param name="movie" value="index.swf" />
+    </object>
+  </div>
+
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("DOMContentLoaded", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const container = document.getElementById("flash-container");
+      const player = ruffle.createPlayer();
+      container.innerHTML = '';
+      container.appendChild(player);
+      player.load("index.swf");
+    });
+  </script>
 </body>
 </html>
